@@ -1,0 +1,16 @@
+.linkTree{
+    display: flex;
+    justify-content: center;
+
+    .tree{
+        height: 50px;
+        width: 80%;
+        background: grey;
+        border-radius: 10px;
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
