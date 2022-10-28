@@ -1,5 +1,7 @@
 import React from "react";
-import './link.scss'
+import './link.scss';
+import slack from './slack.svg';
+import git from './git.svg';
 
 function Link() {
   return (
@@ -29,6 +31,10 @@ function Link() {
           <a id="book_design" href="https://books.zuri.team/design-rules">
             Zuri Book Design
           </a>
+        </div>
+        <div className="logo">
+          <div className="slack"><img src={slack} alt="slack-logo" /></div>
+          <div className="git"><img src={git} alt="git logo" /></div>
         </div>
       </div>
     </div>
