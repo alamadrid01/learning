@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 60px 0;
+
+    .text{
+
+        span{
+            color: rgb(36, 33, 33);
+            font-size: 14.5px;
+        }
+    }
+}
