@@ -24,7 +24,7 @@ function Link() {
         </div>
         <div className="tree">
           <a id="book__python" href="https://books.zuri.team/python-for-beginners?ref_id=<alamadrid>">
-            Zuri Python Book
+            Python Books
           </a>
         </div>
         <div className="tree">
@@ -34,7 +34,7 @@ function Link() {
         </div>
         <div className="tree">
           <a id="book_design" href="https://books.zuri.team/design-rules">
-            Zuri Book Design
+             Design Books
           </a>
         </div>
         <div className="logo">
