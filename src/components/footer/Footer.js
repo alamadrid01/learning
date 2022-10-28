@@ -9,13 +9,13 @@ function Footer() {
     <div>
       <footer>
         <div className="text">
-            <img src={zuri} alt="zuri-image" />
+            <img src={zuri} alt="zuri" />
         </div>
         <div className="text">
             <span>HNG internship 9 Frontend Task </span>
         </div>
         <div className="text">
-        <img src={ingressive} alt="zuri-image" />
+        <img src={ingressive} alt="ingressive" />
         </div>
       </footer>
     </div>
