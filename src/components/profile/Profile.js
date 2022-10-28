@@ -9,6 +9,7 @@ function Profile() {
       <div className="profile">
         <img id='profile__img' src={me} alt="" />
         <p id='twitter'>@AdebayoAlameen</p>
+        <p id='slack'>alamadrid</p>
       </div>
     </div>
   )

@@ -3,9 +3,18 @@
     align-items: center;
     flex-direction: column;
 
+    p{
+        color: rgb(51, 44, 44);
+        font-weight: bold;
+
+        &:nth-child(3){
+            display: none;
+        }
+    }
+
     img{
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
         border-radius: 50%;
         object-fit: cover;
     }
