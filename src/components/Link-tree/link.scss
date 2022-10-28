@@ -1,16 +1,30 @@
 .linkTree{
+    margin: 35px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 
     .tree{
+        align-items: center;
+        justify-content: center;
+        display: flex;
         height: 50px;
         width: 80%;
-        background: grey;
+        background: rgb(214, 218, 218);
         border-radius: 10px;
 
         a{
-            color: black;
+            font-weight: 600;
+            padding: 15px 0;
+            flex: 6;
+            color: rgb(37, 35, 35);
             text-decoration: none;
+        }
+
+        &:hover{
+            background: rgba(136, 128, 128, 0.692);
         }
     }
 }
