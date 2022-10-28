@@ -7,6 +7,11 @@ function Link() {
   return (
     <div>
       <div className="linkTree">
+      <div className="tree">
+          <a id="btn__zuri" href="https://twitter.com/adebayoAlameen">
+            Twitter Link
+          </a>
+        </div>
         <div className="tree">
           <a id="btn__zuri" href="https://training.zuri.team/">
             Zuri Team
