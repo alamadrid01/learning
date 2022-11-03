@@ -1,9 +1,17 @@
 import React from "react";
+import {Navigate, useNavigate} from 'react-router-dom'
 import './link.scss';
 import slack from './slack.svg';
 import git from './git.svg';
 
 function Link() {
+  let navigate = useNavigate();
+
+  const nav = () =>{
+
+    navigate('/contact');
+
+  }
   return (
     <div>
       <div className="linkTree">
@@ -35,6 +43,11 @@ function Link() {
         <div className="tree">
           <a id="book_design" href="https://books.zuri.team/design-rules">
              Design Books
+          </a>
+        </div>
+        <div className="tree" onClick={nav}>
+          <a id="book_design" href="">
+             Contact
           </a>
         </div>
         <div className="logo">
