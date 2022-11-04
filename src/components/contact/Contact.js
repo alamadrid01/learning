@@ -55,23 +55,23 @@ export class Contact extends Component {
               <div className={` ${matches ? 'g':'b'}`}>
                 <div className="a c">
                   <label>First name</label>
-                  <input autoFocus type="text" placeholder='Enter your first name' value={firstName}  onChange={this.firstHandler} />
+                  <input autoFocus type="text" required placeholder='Enter your first name' value={firstName}  onChange={this.firstHandler} />
                 </div>
 
                 <div className="a d" >
                   <label>Last name</label>
-                  <input type="text" placeholder='Enter your last name' value={lastName} onChange={this.secondHandler} />
+                  <input type="text" required placeholder='Enter your last name' value={lastName} onChange={this.secondHandler} />
                 </div>
               </div>
 
               <div className="a">
                 <label>Email</label>
-                <input type="email" placeholder='yourname@email.com' value={email} onChange={this.thirdHandler} />
+                <input type="email" required placeholder='yourname@email.com' value={email} onChange={this.thirdHandler} />
               </div>
 
               <div className="a">
                 <label>Message</label>
-                <textarea value={message} onChange={this.fourthHandler} id="" cols="30" rows="7" placeholder="Send me a message and i'll reply you as soon as possible..."></textarea>
+                <textarea value={message} required onChange={this.fourthHandler} id="" cols="30" rows="7" placeholder="Send me a message and i'll reply you as soon as possible..."></textarea>
               </div>
 
               <div className="a e">

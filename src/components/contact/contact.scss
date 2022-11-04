@@ -38,9 +38,6 @@
             input[type=email]{
                 width: 96%;
             }
-            input[type=text]{
-                text-transform: capitalize;
-            }
 
            .check{
             font-weight: 600;
@@ -50,7 +47,6 @@
            }
             
             textarea{
-                text-transform: capitalize;
                 box-sizing: border-box;
                 padding: 12px 9px;
                 border-radius: 7px;
@@ -118,7 +114,7 @@
         }
 
         button{
-            background: rgb(21, 142, 190);
+            background: rgb(31, 149, 196);
             color: white;
             font-weight: 600;
             padding: 10px ;
@@ -129,10 +125,9 @@
         }
 
     }
-    @media (max-width: 425px){
+    @media (max-width: 768px){
         .contact{
-            width: 100%;
-            padding: 0 15px;
+            width: 90%;
 
             .check{
                 padding-right: 10px;
