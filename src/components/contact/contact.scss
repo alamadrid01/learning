@@ -1,35 +1,33 @@
 .whole{
     display: flex;
     justify-content: center;
-    padding: 30px 0;
+    padding: 19px 0;
 
     .contact{
+        width: 50%;
         text-align: left;
 
         h1{
             margin-bottom: 4px;
         }
         p{
-            margin-bottom: 17px;
+            margin-bottom: 25px;
         }
 
-        .b{
-            display: flex;
-            gap: 20px;
-        }
         .a{
-            margin-bottom: 10px;
+            margin-bottom: 16px;
 
             label{
-                font-weight: 600;
+                font-size: 13.6px;
+                font-weight: 500;
                 display: block;
                 color: rgb(92, 86, 86);
-                margin-bottom: 4px;
+                margin-bottom: 4.5px;
             }
             input{
                 padding: 8px 12px;
                 color: black;
-                border-radius: 8px;
+                border-radius: 7px;
                 border: 0.7px solid black;
 
                 &::placeholder{
@@ -37,10 +35,67 @@
                 }
 
             }
+            input[type=email]{
+                width: 96%;
+            }
+            input[type=text]{
+                text-transform: capitalize;
+            }
+
+           .check{
+            font-weight: 600;
+            font-size: 13px;
+            margin-left: 6px;
+            display: inline-block;
+           }
+            
+            textarea{
+                text-transform: capitalize;
+                box-sizing: border-box;
+                padding: 12px 9px;
+                border-radius: 7px;
+                width: 100%;
+
+             &::placeholder{
+                
+                text-transform: none;
+             }
+            }
+        }
+        .b{
+            display: flex;
+            justify-content: space-between;
+        }
+        .c{
+            box-sizing: border-box;
+            width: 100%;
+
+            input{
+                width: 85%;
+            }
+        }
+        .d{
+            box-sizing: border-box;
+            width: 100%;
+
+            input{
+                width: 92%;
+            }
+        }
+        .e{
+            display: flex;
+            align-items: center;
+
+           @media (max-width: 937px){
+            label{
+                position: relative;
+                top: 10px;
+            }
+           }
         }
 
         button{
-            background: rgb(59, 59, 216);
+            background: rgb(21, 142, 190);
             color: white;
             font-weight: 600;
             padding: 10px ;
