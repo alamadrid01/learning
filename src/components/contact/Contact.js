@@ -76,7 +76,7 @@ export class Contact extends Component {
 
               <div className="a e">
                 <input required type="checkbox" name="" id="" />
-                <label className='check'>You agree to providing your data Adebayo Al-ameen who may contact you</label>
+                <label className='check'>You agree to providing your data to Adebayo Al-ameen who may contact you</label>
               </div>
 
               <button  id='btn__submit' type='submit'>Send message</button>
