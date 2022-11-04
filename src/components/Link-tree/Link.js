@@ -1,5 +1,5 @@
 import React from "react";
-import {Navigate, useNavigate} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import './link.scss';
 import slack from './slack.svg';
 import git from './git.svg';
@@ -46,7 +46,7 @@ function Link() {
           </a>
         </div>
         <div className="tree" onClick={nav}>
-          <a id="book_design" href="">
+          <a id="book_design" href="# ">
              Contact
           </a>
         </div>
