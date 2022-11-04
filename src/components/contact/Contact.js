@@ -4,13 +4,18 @@ import './contact.scss'
 export class Contact extends Component {
     constructor(props) {
       super(props)
-    
       this.state = {
          firstName: '',
          lastName: '',
          email: '',
-         message: ''
+         message: '',
+         matches: window.matchMedia("(max-width: 768px)").matches 
       }
+    }
+
+    componentDidMount() {
+      const handler = e => this.setState({matches: e.matches});
+      window.matchMedia("(max-width: 768px)").addEventListener('change', handler);
     }
 
     firstHandler =(e) =>{
@@ -39,7 +44,7 @@ export class Contact extends Component {
   }
 
   render() {
-    const {firstName, lastName, email, message} = this.state
+    const {firstName, lastName, email, message, matches} = this.state
     return (
       <div className='whole'>
         
@@ -47,13 +52,13 @@ export class Contact extends Component {
             <h1>Contact me</h1>
             <p>Hi there, contact me to ask me about anything you have in mind.</p>
             <form onSubmit={this.submitHandler}>
-              <div className="b">
+              <div className={` ${matches ? 'g':'b'}`}>
                 <div className="a c">
                   <label>First name</label>
                   <input autoFocus type="text" placeholder='Enter your first name' value={firstName}  onChange={this.firstHandler} />
                 </div>
 
-                <div className="a d">
+                <div className="a d" >
                   <label>Last name</label>
                   <input type="text" placeholder='Enter your last name' value={lastName} onChange={this.secondHandler} />
                 </div>

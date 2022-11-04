@@ -93,6 +93,23 @@
             }
            }
         }
+        .g{
+            display: flex;
+            flex-direction: column;
+
+            .c{
+
+                input{
+                    width: 96%;
+                }
+            }
+            .d{
+
+                input{
+                    width: 96%;
+                }
+            }
+        }
 
         button{
             background: rgb(21, 142, 190);
@@ -103,6 +120,17 @@
             outline: none;
             border: none;
             border-radius: 8px;
+        }
+
+    }
+    @media (max-width: 425px){
+        .contact{
+            width: 100%;
+            padding: 0 15px;
+
+            .check{
+                padding-right: 10px;
+            }
         }
     }
 }
