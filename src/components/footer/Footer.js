@@ -7,6 +7,7 @@ import ingressive from './ingressive.svg';
 function Footer() {
   return (
     <div>
+      <hr />
       <footer>
         <div className="text">
             <img src={zuri} alt="zuri" />
