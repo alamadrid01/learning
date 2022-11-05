@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './contact.scss'
+import WebFont from 'webfontloader';
 
 function Contact() {
   useEffect(() => {
@@ -7,6 +8,14 @@ function Contact() {
     .matchMedia("(max-width: 768px)")
     .addEventListener('change', e => setMatches( e.matches ));
   }, []);
+
+  useEffect(() => {
+    WebFont.load({
+      google: {
+        families: ['Inter']
+      }
+    });
+   }, []);
 
 
   const [firstName, setFirstName] = useState('');
