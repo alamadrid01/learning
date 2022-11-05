@@ -1,11 +1,12 @@
 import React from "react";
-import {useNavigate} from 'react-router-dom'
+import {useNavigate, Link} from 'react-router-dom'
 import './link.scss';
 import slack from './slack.svg';
 import git from './git.svg';
 
-function Link() {
+function LinkTree() {
   let navigate = useNavigate();
+
 
   const nav = () =>{
 
@@ -46,9 +47,7 @@ function Link() {
           </a>
         </div>
         <div className="tree" onClick={nav}>
-          <a id="book_design" href="# ">
-             Contact
-          </a>
+          <Link to='/contact'>Contact</Link>
         </div>
         <div className="logo">
           <div className="slack"><img src={slack} alt="slack-logo" /></div>
@@ -59,4 +58,4 @@ function Link() {
   );
 }
 
-export default Link;
+export default LinkTree;
