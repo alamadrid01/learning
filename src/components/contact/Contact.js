@@ -29,6 +29,7 @@ function Contact() {
   const [lastNameError, setLastNameError] = useState(false);
   const [emailError, setEmailError] = useState(false);
   const [messageError, setMessageError] = useState(false);
+  const [display, setDisplay] = useState(true)
   
 
  
@@ -93,7 +94,7 @@ function Contact() {
               <div className={` ${matches ? 'g':'b'}`}>
                 <div className="a c">
                   <label>First name</label>
-                  <input className={`${firstNameError ? 'error' : 'noError'}`} autoFocus type="text" placeholder='Enter your first name' value={firstName}  onChange={firstHandler} />
+                  <input id='first_name' className={`${firstNameError ? 'error' : 'noError'}`} autoFocus type="text" placeholder='Enter your first name' value={firstName}  onChange={firstHandler} />
                   {
                     firstNameError && <span>First name is required</span>
                   }
@@ -101,7 +102,7 @@ function Contact() {
 
                 <div className="a d" >
                   <label>Last name</label>
-                  <input className={`${lastNameError ? 'error' : 'noError'}`} type="text" placeholder='Enter your last name' value={lastName} onChange={lastNameHandler} />
+                  <input id='last_name' className={`${lastNameError ? 'error' : 'noError'}`} type="text" placeholder='Enter your last name' value={lastName} onChange={lastNameHandler} />
                   {
                     lastNameError && <span>Last name is required</span>
                   }
@@ -111,7 +112,7 @@ function Contact() {
 
               <div className="a">
                 <label>Email</label>
-                <input className={`${emailError ? 'error' : 'noError'}`} type="email" placeholder='yourname@email.com' value={email} onChange={emailHandler} />
+                <input id='email'className={`${emailError ? 'error' : 'noError'}`} type="email" placeholder='yourname@email.com' value={email} onChange={emailHandler} />
                 {
                   emailError && <span>Email is required</span>
                 }
@@ -119,7 +120,7 @@ function Contact() {
 
               <div className="a">
                 <label>Message</label>
-                <textarea value={message} className={`${messageError ? 'error' : 'noError'}`} onChange={messageHandler} id="" cols="30" rows="7" placeholder="Send me a message and i'll reply you as soon as possible..."></textarea>
+                <textarea id='message' value={message} className={`${messageError ? 'error' : 'noError'}`} onChange={messageHandler}  cols="30" rows="7" placeholder="Send me a message and i'll reply you as soon as possible..."></textarea>
                 {
                   messageError && <span>Message is required</span>
                 }

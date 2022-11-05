@@ -42,7 +42,7 @@
                 margin-bottom: 4.5px;
             }
             input{
-                padding: 9px 12px;
+                padding: 10px 12px;
                 color: black;
                 border-radius: 7px;
                 font-family: 'Inter';
@@ -148,15 +148,21 @@
         .contact{
             width: 90%;
 
-            label{
-                font-size: 15px;
+            h1{
+                font-size: 38px;
             }
 
-            input{
-                font-size: 15px;
-            }
-            textarea{
-                font-size: 15px;
+            .a{
+                label{
+                    font-size: 15px;
+                }
+    
+                input{
+                    font-size: 15px;
+                }
+                textarea{
+                    font-size: 15px;
+                }
             }
 
             .check{
