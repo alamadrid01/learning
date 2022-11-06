@@ -47,7 +47,7 @@ function LinkTree() {
           </a>
         </div>
         <div className="tree" onClick={nav}>
-          <Link to='/contact'>Contact</Link>
+          <Link id='contact' to='/contact'>Contact</Link>
         </div>
         <div className="logo">
           <div className="slack"><img src={slack} alt="slack-logo" /></div>
